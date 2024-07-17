@@ -1,13 +1,12 @@
 const mongoose = require("mongoose");
+
 mongoose
-  .connect("mongodb://0.0.0.0:27017/empCrud", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect("mongodb://0.0.0.0:27017/empCrud", {})
   .then(() => {
-    console.log("db connedted");
+    console.log("db connected");
   })
   .catch((err) => {
-    console.log("db was not connected");
+    console.error("Error connecting to database:", err);
   });
+
 module.exports = mongoose;
