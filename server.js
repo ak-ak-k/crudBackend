@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/empCrud", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://doadmin:523fQKF96aZ0n1c7@db-mongodb-blr1-55155-1cb7a79a.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=db-mongodb-blr1-55155"
+    // {
+    //   useNewUrlParser: true,
+    //   useUnifiedTopology: true,
+    // }
+  )
   .then(() => {
     console.log("Connected to MongoDB");
   })
