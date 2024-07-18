@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/empCrud", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://adityakirtane27:7V1EKjgtsZKsTN6w@cluster0.mx4oox8.mongodb.net/",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -13,8 +16,8 @@ mongoose
   });
 
 module.exports = mongoose;
-// const mongoose = require("mongoose");p
-
+// const mongoose = require("mongoose");p  adityakirtane27 7V1EKjgtsZKsTN6w
+// mongodb+srv://adityakirtane27:7V1EKjgtsZKsTN6w@cluster0.mx4oox8.mongodb.net/
 // const connectWithRetry = () => {
 //   console.log("MongoDB connection with retry");
 //   mongoose
